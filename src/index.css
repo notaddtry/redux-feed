@@ -16,6 +16,10 @@ code {
     monospace;
 }
 
+ul {
+  list-style: none;
+}
+
 p {
   font-size: 1.1rem;
 }
@@ -107,6 +111,10 @@ section h1 {
 
 /* Posts list */
 
+.post .button {
+  display: block;
+  margin: 0.5rem 0px 0px 0px;
+}
 .post h2 {
   font-size: 2.5rem;
   margin-bottom: 5px;
@@ -116,6 +124,14 @@ section h1 {
   padding: 0.25rem 0.25rem;
   border: 1px solid rgb(177, 174, 174);
   border-radius: 7px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-title {
+  display: flex;
+  justify-content: space-between;
 }
 
 .posts-list .post-excerpt + .post-excerpt {
@@ -149,12 +165,24 @@ button:disabled:hover {
   opacity: 0.5;
 }
 
+.disabled {
+  cursor: auto;
+}
+
 button.reaction-button {
   border: 1px solid #e0e3e9;
   padding: 5px 10px;
   margin: 5px 6px 10px;
   border-radius: 4px;
   white-space: nowrap;
+}
+.singlepost-wrapper {
+  position: relative;
+}
+.singlepost-back-btn {
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
 }
 
 .spinner {
